@@ -1,0 +1,21 @@
+
+#tabs{
+    color: white;
+    padding-right: 30px;
+}
+
+#tabs:hover{
+    color: #FF4D00;
+}
+
+#Title{
+    color: white;
+}
+
+#innertabs:hover{
+    color: #FF4D00;
+}
+
+.Navbar{
+    background-color: #141414;
+}

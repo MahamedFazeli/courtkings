@@ -1,0 +1,34 @@
+.title{
+    justify-content: center;
+    display: flex;
+}
+
+.carousel{
+    width: 800px;
+    
+    margin: auto;
+}
+
+.carousel-control-prev{
+    height: 500px;
+}
+
+.carousel-control-next{
+    height: 500px;
+}
+
+.carousel .carousel-control-next-icon{
+    visibility: hidden;
+}
+
+.carousel:hover .carousel-control-next-icon{
+    visibility: visible;
+}
+
+.carousel .carousel-control-prev-icon{
+    visibility: hidden;
+}
+
+.carousel:hover .carousel-control-prev-icon{
+    visibility: visible;
+}
