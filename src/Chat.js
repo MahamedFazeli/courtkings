@@ -1,6 +1,6 @@
 const chat = () => {
     return ( 
-        <h1>chat</h1>
+        <h1>chat2</h1>
      );
 }
  
