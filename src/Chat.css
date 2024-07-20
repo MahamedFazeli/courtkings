@@ -1,0 +1,43 @@
+.lfg-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .lfg-entry {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .lfg-entry h2 {
+    margin-top: 0;
+  }
+  
+  .lfg-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .lfg-form input,
+  .lfg-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .lfg-form button {
+    background-color: #ff5722;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .lfg-form button:hover {
+    background-color: #e64a19;
+  }
