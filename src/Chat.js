@@ -1,6 +1,7 @@
+import React, { useState } from 'react';
 import './Chat.css';
 
-const chat = () => {
+const Chat = () => {
     const [entries, setEntries] = useState([
       { id: 1, title: "Looking for 2 players", date: "July 20, 2024", gender: "Male", age: "18-25", message: "We need 2 more players for our game this weekend." },
       { id: 2, title: "Seeking Female Player", date: "July 21, 2024", gender: "Female", age: "20-30", message: "Looking for a female player for our mixed team practice." },
@@ -43,4 +44,4 @@ const chat = () => {
     );
   };
   
-  export default chat;
+  export default Chat;
