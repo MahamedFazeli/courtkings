@@ -1,34 +1,45 @@
-.title{
+.title {
     justify-content: center;
     display: flex;
+    padding: 20px;
+    font-size: 2em;
+    font-weight: bold;
 }
 
-.carousel{
-    width: 800px;
-    
+.carousel {
+    width: 90%;
     margin: auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #141414;
 }
 
-.carousel-control-prev{
-    height: 500px;
+
+.carousel-control-prev, .carousel-control-next {
+    width: 5%;
+    opacity: 0.8;
+    height: 600px;
 }
 
-.carousel-control-next{
-    height: 500px;
+.carousel-control-prev:hover, .carousel-control-next:hover {
+    opacity: 1;
 }
 
-.carousel .carousel-control-next-icon{
-    visibility: hidden;
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
 }
 
-.carousel:hover .carousel-control-next-icon{
-    visibility: visible;
+.carousel-caption {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 8px;
 }
 
-.carousel .carousel-control-prev-icon{
-    visibility: hidden;
-}
-
-.carousel:hover .carousel-control-prev-icon{
-    visibility: visible;
+.react-player {
+    width: 100% !important;
+    height: 650px !important;
+    border-radius: 8px;
+    overflow: hidden;
 }

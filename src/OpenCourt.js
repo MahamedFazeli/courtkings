@@ -20,8 +20,8 @@ const Opencourt = () => {
   return (
     <div className="container-fluid">
       <Row>
-        <Col><h1>Search a Date</h1></Col>
-        <Col><h1>List of open courts</h1></Col>
+        <Col><h1 className='openCourtheader'>Search a Date</h1></Col>
+        <Col><h1 className='openCourtheader'>List of open courts</h1></Col>
       </Row>
       <Row>
         <Col>

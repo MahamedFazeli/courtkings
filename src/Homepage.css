@@ -45,4 +45,16 @@ html, body {
     transform: translateY(50%);
   }
 
+  .register-button {
+    background-color: #141414 !important;
+    color: white !important;
+    border: none !important;
+    transition: background-color 0.3s ease !important;
+  }
+  
+  .register-button:hover {
+    background-color: #FF4D00 !important;
+  }
+
+
  

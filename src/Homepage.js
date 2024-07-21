@@ -9,7 +9,7 @@ const Homepage = () =>{
                 <h2>COURT KINGS <br /> Basketball Club</h2>
                 <div className="slogan"><h1>DO IT</h1></div>
                 <div className="register">
-                <Button variant="dark" href="personal-info" size="lg" id="reg">Register</Button>
+                <Button  href="personal-info" size="lg" id="reg" className="register-button">Register</Button>
                 </div>
             </div>
             

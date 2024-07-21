@@ -2,11 +2,11 @@ import React, { useState } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import ToggleButtonGroup from 'react-bootstrap/ToggleButtonGroup';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useNavigate } from 'react-router-dom';
+import './TrainingSessions.css';
 
 const TrainingSessions = () => {
   const [selectedCoach, setSelectedCoach] = useState('');
@@ -30,7 +30,7 @@ const TrainingSessions = () => {
     event.preventDefault();
     alert(`Coach: ${selectedCoach}, Date: ${selectedDate}, Drill: ${selectedDrill} 
 A confirmation Email will be sent shortly`);
-navigate('/SEG_Project2');
+    navigate('/SEG_Project2');
   };
 
   const coaches = ['Coach 1', 'Coach 2', 'Coach 3', 'Coach 4'];
@@ -46,7 +46,7 @@ navigate('/SEG_Project2');
       <Row>
         <Col>
           <h2 className="text-center">Select a Coach</h2>
-          <ToggleButtonGroup type="radio" name="coaches" className=" d-flex flex-column align-items-center btn-group-lg ">
+          <ToggleButtonGroup type="radio" name="coaches" className="d-flex flex-column align-items-center btn-group-lg ">
             {coaches.map((coach, idx) => (
               <ToggleButton
                 key={idx}
@@ -99,9 +99,13 @@ navigate('/SEG_Project2');
       </Row>
       <Row className="mt-4">
         <Col className="text-center">
-          <Button href='/SEG_Project2' variant="dark" onClick={handleSubmit}>
+          <button
+            href='/SEG_Project2'
+            className="book-button"
+            onClick={handleSubmit}
+            >
             Book
-          </Button>
+          </button>
         </Col>
       </Row>
     </div>

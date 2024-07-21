@@ -44,11 +44,49 @@
   }
   
   button:hover {
-    background-color: #555;
+    background-color: #FF4D00;
   }
 
   .button{
     display: flex;
     justify-content: space-between;
     margin-top: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .error {
+    border-color: red;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .next-button {
+    background-color: #141414;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .next-button:hover {
+    background-color: #FF4D00;
   }

@@ -1,11 +1,56 @@
-.table {
-    max-height: 60vh;
-    overflow-y: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
-  }
+.tournament-container .container-fluid {
+  padding: 20px;
+}
+
+.tournament-container h1,
+.tournament-container h3 {
+  margin-bottom: 20px;
+  text-align: center;
+}
 
 
+.tournament-container form {
+  margin-bottom: 20px;
+}
+
+.tournament-container .input-group {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.tournament-container .table {
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.tournament-container .table th,
+.tournament-container .table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.tournament-container .signup-button {
   
+  background-color: #141414 !important;
+  color: white !important;
+  border: none !important;
+  transition: background-color 0.3s ease !important;
+}
+
+.tournament-container .signup-button:hover {
+  background-color: #FF4D00 !important;
+}
+
+.tournament-container .scroller {
+  max-height: 90vh;
+  
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}

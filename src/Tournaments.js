@@ -22,47 +22,49 @@ const Tournaments = () => {
       };
 
     return ( 
-        <div className="container-fluid">
-            <h1>Upcoming Tournaments</h1>
-            <Form>
-                <InputGroup>
-                <Form.Control onChange={(event) => setSearch(event.target.value)} placeholder="Search"/>
-                </InputGroup>
-            </Form>
-            <h3>List of Tournaments</h3>
-            <div className="table">
-            <Table striped bordered hover>
-                <thead>
-                    <tr>
-                    <th>#</th>
-                    <th>Date</th>
-                    <th>Tournament Name</th>
-                    <th>Gender</th>
-                    <th>Registration Deadline</th>
-                    <th>League</th>
-                    </tr>
-                </thead>
-                <tbody>
-            {data.filter((item) => {
-                return search.toLowerCase() === "" ? item : filterData(item)
-            }).map((item) =>(
-                 <tr>
-                 <td>{item.Id}</td>
-                 <td>{item.Date}</td>
-                 <td>{item.TournamentName}</td>
-                 <td>{item.AgeGender}</td>
-                 <td>{item.RegistrationDeadline}</td>
-                 <td>{item.League}</td>
-                 </tr>
-            ))}
-                </tbody>
-            </Table>
+        <div className="tournament-container">
+            <div className="container-fluid">
+                <div className="scroller">
+                    <h1>Upcoming Tournaments</h1>
+                    <Form>
+                        <InputGroup>
+                            <Form.Control onChange={(event) => setSearch(event.target.value)} placeholder="Search"/>
+                        </InputGroup>
+                    </Form>
+                    <h3>List of Tournaments</h3>
+                    <div className="table">
+                        <Table striped bordered hover>
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Date</th>
+                                    <th>Tournament Name</th>
+                                    <th>Gender</th>
+                                    <th>Registration Deadline</th>
+                                    <th>League</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {data.filter((item) => {
+                                    return search.toLowerCase() === "" ? item : filterData(item)
+                                }).map((item) => (
+                                    <tr key={item.Id}>
+                                        <td>{item.Id}</td>
+                                        <td>{item.Date}</td>
+                                        <td>{item.TournamentName}</td>
+                                        <td>{item.AgeGender}</td>
+                                        <td>{item.RegistrationDeadline}</td>
+                                        <td>{item.League}</td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </Table>
+                    </div>
+                    <Button variant="dark" href="tournament-register" size="lg" className="signup-button">Sign up</Button>
+                </div>
             </div>
-            <Button variant="dark" href="tournament-register" size="lg" id="reg">Sign up</Button>
         </div>
-        
-        
-     );
+    );
 }
- 
+
 export default Tournaments;

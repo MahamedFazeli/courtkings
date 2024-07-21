@@ -1,0 +1,15 @@
+.book-button {
+    background-color: #141414;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 10px;
+    
+  }
+  
+  .book-button:hover {
+    background-color: #FF4D00;
+  }
