@@ -29,7 +29,7 @@ const navbar = () => {
                   </NavDropdown.Item>
                 </NavDropdown>
                 <Nav.Link href="chat" id="tabs" className="navtab">Chat</Nav.Link>
-                <NavDropdown title="Langauge" id="tabs" className="navtab">
+                <NavDropdown title="Language" id="tabs" className="navtab">
                   <NavDropdown.Item href="SEG_Project2" id="innertabs">English</NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item href="SEG_Project2FR" id="innertabs">
